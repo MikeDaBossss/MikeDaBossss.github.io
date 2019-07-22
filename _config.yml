@@ -1,11 +1,11 @@
 # Site settings
 author: Michael Noel
-title: 
+title: Why data science?
 header-img: img/home-bg.png
 email: mike.noelmn@gmail.com
 copyright_name: Michael Noel
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Why did I decide to learn data science. 
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  MikeDaBossss
