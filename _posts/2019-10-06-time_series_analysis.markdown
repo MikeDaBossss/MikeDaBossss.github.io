@@ -1,0 +1,20 @@
+---
+layout: post
+title:      "Time Series Analysis"
+date:       2019-10-07 02:37:39 +0000
+permalink:  time_series_analysis
+---
+
+
+I will talk about a few things that I have learned that were not taught to me by Flatiron School. One thing that I learned doing my module 4 project on the housing was to use pandas melt. This 
+`melted = pd.melt(data,id_vars=['RegionID','RegionName', 'City', 'State', 'Metro',CountyName','SizeRank'],value_vars=value_varss)
+`This function will take the data which is a pandas dataframe and melt it so that I can easily use it with time series data.
+The data before the melting has each time series set to one row per zip code with lots of columns. It is a lot easier to make the time series if the timestamps are the indexes. So the melt statement can convert the timestamp columns to timestamp rows. Essentially the updated pandas dataframe will have `RegionID RegionName City State Metro` ... as the columns but will not have any of the timestamps in the columns. The value vars part is where you tell melt which columns to turn to rows. So if I have 500 rows and 50 extra time stamp columns in my original pandas dataframe after I melt the dataframe it will have 500 * 50 rows or 25,000. For example the first column to get converted to a row will take up the first 500 rows. Meaning the first 500 rows will only contain the unique identifier data `RegionID RegionName City State` ... and then the value for the very first column converted to rows. Say 12/1/2001 is the first column to be converted to rows so that time series will be easier to deal with. The first 500 rows will be all the unique identifiers and then only the value for 12/1/2001 then the next 500 rows will be the same unique identifers in the unique identifers columns but the values will be for 12/2/2001. Then in order to make it easy to use with graphs change the index so that the indexes are the time dates at that row. This is easy to do in pandas python. If my dataframe was called Flat then I would say `Flat.index = Flat.time` With the `Flat.time` being the column holding all the dates. Then when you use matplotlib to make graphs it will automatically look at the indexes and use those for the x values and they will be the timestamps that you want to have on the x axis. 
+
+Another thing that I learned on my project was how to delete a single object in a list that is in a list that is in a list. If you like visual representations then it would look like this `[   [    [ 1,2 ],  [3,4]    ]    ]. `For instance I want to just delete the `[3,4]`. In my case I ran into an error when I forgot to check if all the zipcodes in the Zillow api had all the time series data. There was a few zipcodes that only had 1/2 the data points. So I needed to delete only these lists that didn't have the data. I don't know what indexes those are in in my list but I can check if it is one of the zipcodes that doesn't have all the data. I used `for index,outerlist in enumerate(zipcodes):
+for index2,innerlist in enumerate(outerlist):
+check if the zipcode has missing data
+if it does then
+del zipcodes[index,index2]` This uses the enumerate function because I need to know the index of both the outerlist and where in the inner list the bad zipcode is. With the enumerate function it provides a counting object so that indexing becomes easy. The del stands for delete and it deletes the bad zipcode in the list of list in a list without messing up the rest of the for loops. It would make sense that in a list `[1,2,3,4,5]` that if I am looping through and currently I am at the index number 2 which would be 3 and say I want to delete this number but none of the rest. I would say `del[2]`. Once I delete the 3 then I have `[1,2,4,5]` but the counter index was at 2 so if it goes to the next counter index 3 but the list has changed to `[1,2,4,5]` then it will find 5 but it will skip 4. Luckily python somehow accounts for this either by deleting at the end of the for loop or moving the enumerate index back by 1. So the index in the enumerate will find 4 like it should even if I delete the 3 before it. 
+
+
