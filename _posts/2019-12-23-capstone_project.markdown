@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Capstone Project"
-date:       2019-12-23 17:57:19 +0000
+date:       2019-12-23 12:57:20 -0500
 permalink:  capstone_project
 ---
 
@@ -21,4 +21,4 @@ My momentum strategy was based on strategies that I found on quantpedia.com they
 My random forest strategy  was to take financials and ratios of stocks and use those fundamentals to figure out which stocks would return the most amount of money. I would calculate if the latest financials were bigger numbers than the second to last financials and ratios. Then I would run a random forest on last months combination of current financials and ratios and if the financials and ratios were more than the time before. I would classify if the certain stock would go up a certain percentage or not. I tried to use a combination of three months as a time period for the classification along with a 20% gain in those three months. If I could get 20% every quarter in a year I would be getting 107% per year. That is 9 times more than the S&P 500 roughly. My random forest was not very accurate at calculating which stocks would go up 20% given a certain 3 month time period. It did produce decent results of 10.7% per year. I did not have enough computing time or resources to try enough parameters in order to get better results, but I think that using this method of classifying could be highly profitable. In order to get better results I thought about adding past momentum in the stock price, more momentum in the financials information, different return percentages, different random forest parameters, and different time periods. Also this method only involves going long on positions which means buying and then hoping that the price goes up, but this method should be able to classify whether stocks will go down a lot or not based on the same features. So if I wanted to maximize results I would try to classify stocks into a few categories of returns depending on the time period adding more categories. Then I would go long on the best classified stocks and short on the worst classified stocks hopefully that if the market behaves the same as in the past then my method would win a lot on the long and the short getting more of the biggest returns per time period than if I had to go only long I would have fewer stocks that would get such big returns. If the market goes bad then my shorts should do really good to make up for the longs not doing as good and vice versa. 
 
 
-The link to my github repository https://github.com/MikeDaBossss/Capstone-Project
+[The link to my github repository](https://github.com/MikeDaBossss/Capstone-Project)
