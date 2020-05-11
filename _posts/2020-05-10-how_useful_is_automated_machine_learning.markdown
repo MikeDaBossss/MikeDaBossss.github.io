@@ -1,0 +1,9 @@
+---
+layout: post
+title:      "How useful is Automated Machine Learning? "
+date:       2020-05-11 00:10:04 +0000
+permalink:  how_useful_is_automated_machine_learning
+---
+
+
+All of the big tech companies are offering automated machine learning tools. There is Amazon Sagemaker, Microsoft Azure, and Google Cloud AutoML. I have not personally used any of these tools, but I have read some about them and I have heard and seen good things. These tools allow people who are not professional programmers, data scientists, mathematicians, and other scientists to be able to quickly use high quality machine learning models. For instance a business owner might want to predict how many lightbulbs to order next month because lightbulbs only last for 3 months on the shelves. It would be relatively hard to be very accurate about how many lightbulbs to order so as to not order too many but also not order too little. These automated machine learning tools solve this problem for the business owner by allowing the owner him/herself using these tools. The tools try lots of different math models and it sees which ones are the best and then uses thoses. There is not a lot to it as far as having to know statistics, deep learning, or anything about for instance how many lightbulbs to order. The results are very good almost as good as professionals, but the cost is much cheaper and the length of time is much shorter to finding the right answers. I also see automated machine learning as a very useful tool for professional data scientists to use in order to get a high level overview of which models are working the best, which things should be tuned, and if there are any type of settings to change in the auto machine learning to make it go better such as trying to set it up as classifying whether sales will be more or less than a number instead of trying to figure out specifically which number the sales will be. 
