@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What are the most important things when considering where to live? "
-date:       2020-05-17 20:05:15 +0000
+date:       2020-05-17 16:05:16 -0400
 permalink:  what_are_the_most_important_things_when_considering_where_to_live
 ---
 
