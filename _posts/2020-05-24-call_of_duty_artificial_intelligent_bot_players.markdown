@@ -1,0 +1,9 @@
+---
+layout: post
+title:      "Call of Duty Artificial Intelligent Bot Players"
+date:       2020-05-25 03:54:12 +0000
+permalink:  call_of_duty_artificial_intelligent_bot_players
+---
+
+
+I was playing the new Call of Duty Warzone and I played with some practice articially intelligent robot players and it was interesting. I was trying to think about how the developers made these bots know how to actually do the things that they were doing. They were just like normal players except for that they did not do less obvious types of moves that people do such as dropping to the ground when confronted with a player as so make themself smaller. These bots moved around, knew how to shoot, how to hide, and the way that the game works. I don't think that they were based upon the play of normal players because they do not move like most players do in the game, and the shooting is not very close to normal players. I would guess that the developers more or less hard coded the bots or ran some type of General adversarial network with the players until they learned to be a certain level of skill. Perhaps they could have done reinforcement learning against real players or some past play from some real players in order to train them to get more hits on the adversaries or to last longer in the game. I know that Google has used reinforcement learning to train artificially intelligent bots to be better at starcraft than the best players in the world even giving the bots a handicap of having only human level abilities except for ability to strategize,do math, keep track of events, etc. I believe that Call of Duty could make a game completely with bots that would be fun nearly similar to the same solos game that players play with whatever type of skill level the user would want completely customized. 
