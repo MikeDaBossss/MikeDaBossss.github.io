@@ -1,0 +1,9 @@
+---
+layout: post
+title:      "What to do when StackOverflow doesn't fix your coding problem?"
+date:       2020-06-15 02:33:56 +0000
+permalink:  what_to_do_when_stackoverflow_doesnt_fix_your_coding_problem
+---
+
+
+I wrote a python script to send messages so that I would not have to type out all the possible combinations of email formats by hand. While using python to send the messages programatically I could not get the BCC option to work properly. It would send the messages to all of the BCC'd emails, but it would show the BCC line to the receiver. I do not care if they see that I was trying to send a BCC to a their email 11 times in order to find the right email structure for their business, but it was annoying. While on stackoverflow I found multiple solutions and I tested these solutions but they did not work properly. I was getting the BCC to work but it still would show the BCC header which it really should not. I tried thinking about which version of python, which email server I am using to test the functionality, and which version of the packages I had. I still could not understand why the headers would not work. Seemingly from my understanding if I send email headers to a gmail server stating certain emails to be the Black carbon copies then it should be the email server who takes those email headers that it recognizes and sends it so that the recipient does not see the emails. I don't know how or for what reason google would recognize the BCC header,implement it, and it still would somehow show the BCC to the recipient. It does not make sense for this to be a functionality since no one would ever want the BCC to be shown. I figure that in order for me the figure it out that I would have to read all about email headers, google's specific email settings, all the python versions, and all the source codes for the different packages. This is so much time that I do not want to spend. 
